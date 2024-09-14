@@ -1,7 +1,9 @@
 .App {
   text-align: center;
 }
-
+.map-container {
+  overflow: hidden;  /* Ensure the map does not cause scrolling */
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
