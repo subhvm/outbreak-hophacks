@@ -4,9 +4,31 @@
 .map-container {
   overflow: hidden;  /* Ensure the map does not cause scrolling */
 }
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+/* App.css */
+.dropdown-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  height: 4rem;
+  background-color: white;
+  border-bottom: 1px solid #ccc;
+  position: absolute;
+  top: 4rem; /* Adjust according to your navigation bar height */
+  left: 0;
+  right: 0;
+  z-index: 1000; /* Ensure the container is above the map */
+}
+
+.stats {
+  display: flex;
+  gap: 2rem; /* Space between the stats */
+}
+
+.stats div {
+  font-size: 1rem;
+  text-align: center;
 }
 
 @media (prefers-reduced-motion: no-preference) {

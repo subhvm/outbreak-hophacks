@@ -13,6 +13,8 @@ router.get('/', async (req, res) => {
       lng: country.countryInfo.long,
       disease: 'COVID-19',
       cases: country.cases,
+      deaths: country.deaths,
+      recovered: country.recovered,
       active_cases: country.active
     }));
     res.json(outbreaks);
@@ -21,6 +23,11 @@ router.get('/', async (req, res) => {
     res.status(500).json({ message: 'Error fetching disease data' });
   }
 });
+
+
+
+
+
 
  
   
